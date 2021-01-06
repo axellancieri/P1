@@ -65,13 +65,12 @@ header {
 header {
   line-height: 1.5;
 }
-/* Got "float" from https://stackoverflow.com/questions/32258016/how-to-move-image-with-css-html, "user4798789" was just asking a question but I tried the float command and did the trick at placing the arrow on the left that's what I wanted */
 header .arrow {
   margin-top: 50px;
   width: 200px;
   height: 200px;
   transition: all .5s;
-  float: left; 
+  float: left; /*Got this from https://stackoverflow.com/questions/32258016/how-to-move-image-with-css-html, "user4798789" was just asking a question but I tried the float command and did the trick at placing the arrow on the left that's what I wanted*/
 }
 header .arrow:hover {
   transform: scale(1.2) rotate(5deg);
@@ -120,7 +119,7 @@ header .location {
 .card1 {
   margin: 10px;
   padding: 20px 40px 40px;
-  max-width: 450px;
+  max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -134,7 +133,7 @@ header .location {
 .card2 {
   margin: 10px;
   padding: 20px 40px 40px;
-  max-width: 700px;
+  max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -166,7 +165,6 @@ header .location {
   padding: 20px 40px 40px;
   max-width: 900px;
   text-align: middle;
-  position: middle;
   background: rgb(218, 236, 138);
   border-bottom: 4px solid rgb(11, 38, 51);
   border-radius: 6px;
@@ -227,6 +225,12 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
 }
 a.github {
   background-image: url(images/github.svg);
