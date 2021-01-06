@@ -65,12 +65,13 @@ header {
 header {
   line-height: 1.5;
 }
+/* Got "float" from https://stackoverflow.com/questions/32258016/how-to-move-image-with-css-html, "user4798789" was just asking a question but I tried the float command and did the trick at placing the arrow on the left that's what I wanted */
 header .arrow {
   margin-top: 50px;
   width: 200px;
   height: 200px;
   transition: all .5s;
-  float: left; /*Got this from https://stackoverflow.com/questions/32258016/how-to-move-image-with-css-html, "user4798789" was just asking a question but I tried the float command and did the trick at placing the arrow on the left that's what I wanted*/
+  float: left; 
 }
 header .arrow:hover {
   transform: scale(1.2) rotate(5deg);
@@ -89,7 +90,7 @@ header .uruguay {
   margin: 20px auto;
   position: relative;
   display: table;
-  bottom: 480px;
+  bottom: 550px;
   border-radius: 50%;
   border: #222;
   transition: 1s;
@@ -110,7 +111,7 @@ header .tag {
   display: table;
   margin: 30px auto;
   position: relative;
-  bottom: 460px;
+  bottom: 550px;
 } 
 header .location {
   background-color: #222;
@@ -119,8 +120,8 @@ header .location {
 .card1 {
   margin: 10px;
   padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: middle;
+  max-width: 450px;
+  text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
@@ -133,8 +134,8 @@ header .location {
 .card2 {
   margin: 10px;
   padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: middle;
+  max-width: 700px;
+  text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
@@ -149,7 +150,8 @@ header .location {
   margin: 10px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: middle;
+  max-height: 450px;
+  text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
@@ -162,8 +164,9 @@ header .location {
 .card4 {
   margin: 10px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width: 900px;
   text-align: middle;
+  position: middle;
   background: rgb(218, 236, 138);
   border-bottom: 4px solid rgb(11, 38, 51);
   border-radius: 6px;
@@ -224,12 +227,6 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
 }
 a.github {
   background-image: url(images/github.svg);
