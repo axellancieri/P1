@@ -159,6 +159,19 @@ header .location {
 .card3:hover {
   border-color: #1c93d8;
 }
+.card4 {
+  margin: 10px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: middle;
+  background: rgb(218, 236, 138);
+  border-bottom: 4px solid rgb(11, 38, 51);
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card4:hover {
+  border-color: #237520;
+}
 ul.skills {
   padding: 0;
   text-align: center;
