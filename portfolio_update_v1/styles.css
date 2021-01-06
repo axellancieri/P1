@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #222;
   background: #f7f5f0;
 }
@@ -57,39 +57,50 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/montevideo.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 650px;
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  width: 200px;
+  height: 200px;
   transition: all .5s;
+  float: left; /*Got this from https://stackoverflow.com/questions/32258016/how-to-move-image-with-css-html, "user4798789" was just asking a question but I tried the float command and did the trick at placing the arrow on the left that's what I wanted*/
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
-.tag {
+.profile-image2 {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  transition: all .5s;
+  float: right;
+}
+header .profile-image2:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+header .tag {
   background-color: #efefef;
   color: black;
   padding: 10px;
   border-radius: 5px;
   display: table;
-  margin: 10px auto;
+  margin: 30px auto;
+  position: relative;
+  bottom: 600px;
 } 
-.location {
+header .location {
   background-color: #222;
-  color: yellow;
+  color: rgb(255, 255, 255);
 }
 .card {
-  margin: 30px;
+  margin: 10px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -107,19 +118,23 @@ ul.skills {
   text-align: center;
 }
 
-.skills li {
+.skills li{
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
-  background: #0399ff;
+.skills-html {
+background-color: #0468ff;  
 }
-
+.skills-css {
+background-color: #ff9904;  
+}
+.skills-javascript {
+background-color: #eb2525;  
+}
 footer {
   width: 100%;
   min-height: 30px;
