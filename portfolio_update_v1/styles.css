@@ -65,54 +65,100 @@ header {
 header {
   line-height: 1.5;
 }
-header .profile-image {
+header .arrow {
   margin-top: 50px;
   width: 200px;
   height: 200px;
   transition: all .5s;
   float: left; /*Got this from https://stackoverflow.com/questions/32258016/how-to-move-image-with-css-html, "user4798789" was just asking a question but I tried the float command and did the trick at placing the arrow on the left that's what I wanted*/
 }
-header .profile-image:hover {
+header .arrow:hover {
   transform: scale(1.2) rotate(5deg);
 }
-.profile-image2 {
+.arrow2 {
   margin-top: 50px;
   width: 200px;
   height: 200px;
   transition: all .5s;
   float: right;
 }
-header .profile-image2:hover {
+header .uruguay {
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 20px auto;
+  position: relative;
+  display: table;
+  bottom: 480px;
+  border-radius: 50%;
+  border: #222;
+  transition: 1s;
+  transition-timing-function: .2s;  
+
+}
+.uruguay:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+header .arrow2:hover {
   transform: scale(1.2) rotate(5deg);
 }
 header .tag {
   background-color: #efefef;
   color: black;
-  padding: 10px;
+  padding: 8px;
   border-radius: 5px;
   display: table;
   margin: 30px auto;
   position: relative;
-  bottom: 600px;
+  bottom: 460px;
 } 
 header .location {
   background-color: #222;
   color: rgb(255, 255, 255);
 }
-.card {
+.card1 {
   margin: 10px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
+  text-align: middle;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
+.card1:hover {
   border-color: #ff99ff;
 }
 
+.card2 {
+  margin: 10px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: middle;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.card2:hover {
+  border-color: #67ee73;
+}
+
+.card3 {
+  margin: 10px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: middle;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.card3:hover {
+  border-color: #1c93d8;
+}
 ul.skills {
   padding: 0;
   text-align: center;
