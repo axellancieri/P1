@@ -89,8 +89,7 @@ header .uruguay {
   margin-top: 20px;
   position: relative;
   bottom: 250px;
-  transition: all 1s;
-  transition-timing-function: .2s;  
+  transition: all 1s; 
 
 }
 .uruguay:hover {
@@ -161,7 +160,7 @@ header .location {
   margin: 10px;
   padding: 20px 40px 40px;
   max-width: 900px;
-  text-align: middle;
+  text-align: left;
   background: rgb(218, 236, 138);
   border-bottom: 4px solid rgb(11, 38, 51);
   border-radius: 6px;
