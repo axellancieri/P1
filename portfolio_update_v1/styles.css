@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/montevideo.jpg') no-repeat top center ;
+  background: url('images/montevideo.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 300px;
@@ -67,36 +67,34 @@ header {
 }
 .arrow {
   background-image: url(images/arrow.jpg); 
-  margin-top: 50px;
   width: 200px;
-  height: 200px;
+  height: 219px;
   transition: all .5s;
-  float: left; /*Got this from https://stackoverflow.com/questions/32258016/how-to-move-image-with-css-html, "user4798789" was just asking a question but I tried the float command and did the trick at placing the arrow on the left that's what I wanted*/
+  float: right; /*fot this from https://stackoverflow.com/questions/32258016/how-to-move-image-with-css-html, "user4798789" was just asking a question but I tried the float command and did the trick at placing the arrow on the left that's what I wanted*/
 }
 .arrow:hover {
-  transform: scale(1.2) rotate(5deg);
-}
-.arrow2 {
-  background-image: url(images/arrow.jpg); 
-  margin-top: 50px;
-  width: 200px;
-  height: 200px;
-  transition: all .5s;
-  float: right;
+  transform: scale(1.2) translateY(1.5em);
 }
 header .profile-image {
   border-radius: 50%;
-  margin-top: 20px;
   position: relative;
-  bottom: 250px;
+  bottom: 260px;
   transition: all 1s; 
 
 }
 .profile-image:hover {
   transform: scale(1.1) rotate(360deg);
 }
-header .arrow2:hover {
-  transform: scale(1.2) rotate(5deg);
+.uruguay {
+  height: 100px;
+  width: 180px;
+  position: relative;
+  left: 30px;
+  bottom: 250px;
+  transition: all 1s; 
+}
+.uruguay:hover {
+  transform: scale(1.3) ;
 }
 header .tag {
   background-color: #efefef;
@@ -145,7 +143,7 @@ header .location {
   margin: 10px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  max-height: 450px;
+  max-height: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -169,6 +167,19 @@ header .location {
 .card4:hover {
   border-color: #237520;
 }
+.card5 {
+  margin: 10px;
+  padding: 20px 40px 40px;
+  max-width: 900px;
+  text-align: left;
+  background: rgba(202, 25, 34, 0.411);
+  border-bottom: 4px solid rgb(173, 189, 204);
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card5:hover {
+  border-color: #030803;
+}
 ul.skills {
   padding: 0;
   text-align: center;
@@ -183,7 +194,7 @@ ul.skills {
 }
 
 .skills-html {
-background-color: #0468ff;  
+background-color: #0468ff;
 }
 .skills-css {
 background-color: #ff9904;  
@@ -191,6 +202,10 @@ background-color: #ff9904;
 .skills-javascript {
 background-color: #eb2525;  
 }
+.skills-language {
+background-color: #000105;  
+}
+
 footer {
   width: 100%;
   min-height: 30px;
